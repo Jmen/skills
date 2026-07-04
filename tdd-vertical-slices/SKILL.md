@@ -1,6 +1,6 @@
 ---
 name: tdd-vertical-slices
-description: Use when implementing a change with guidance on how to break the work down into smaller simpler changes
+description: Use when implementing a change — break the work into vertical slices and build each with TDD
 ---
 
 # Preparation

@@ -10,11 +10,11 @@ description: Use when creating a Pull Request
 - Every changed file appears in exactly one section
 - Order the sections so that they build understanding of the change sequentially
 - Output in raw markdown compatible with GitHub surrounded in a code block
-- Underscores in file paths need to be escaped, otherwise they will be styled as bold text
 
 # Reference
 
 - Use bullet point lists instead of paragraphs of text
+- Underscores in file paths need to be escaped, otherwise they will be styled as bold text
 
 ## Template
 

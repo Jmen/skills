@@ -7,7 +7,7 @@ description: Use when committing changes to version control
   
 Use conventional commits prefix
   
-After the prefix, the commit message should complete the sentence, "Applying this change will ..."
+After the prefix, the commit message should complete the sentance, "Applying this change will ..."
 
 Do not include this initial sentance in the actual message, as the message should be short and concise
 
@@ -18,6 +18,6 @@ Better: "ci: run tests against production build rather than dev hot-reload, for 
 
 # Examples
 
-feat: allow user to update profile image
-ci: ensure integrated code passes unit tests
-chore: apply latest security updates from dependencies
+feat: allow user to update profile image, so that they can keep it up to date
+ci: ensure integrated code passes unit tests, so that builds are failed on issues
+chore: apply latest security updates from dependencies, to keep the solution secure
