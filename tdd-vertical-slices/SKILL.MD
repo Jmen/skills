@@ -11,8 +11,8 @@ description: Use when implementing a change with guidance on how to break the wo
 # Slicing
 
 - slice the work vertically, test and implement each slice of functionality end to end, starting from the external interface
-- prefer keeping the code in a work state as much as possible at each stage
-- any shared fundational work can be added onto the first slice to keep in interfaces client driven
+- prefer keeping the code in a working state as much as possible at each stage
+- any shared foundational work can be added onto the first slice, to keep the interfaces client driven
 - any shared infrastructure could be added as an extra step at the end
 
 E.G. for adding a new resource which requires CRUD operations the slices could be
