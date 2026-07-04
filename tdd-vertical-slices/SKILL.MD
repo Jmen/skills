@@ -1,6 +1,6 @@
 ---
-name: tdd-slices
-description: Plan and execute work using Test Driven Design in vertical slices
+name: tdd-vertical-slices
+description: Use when implementing a change with guidance on how to break the work down into smaller simpler changes
 ---
 
 # Preparation
@@ -15,7 +15,7 @@ description: Plan and execute work using Test Driven Design in vertical slices
 - any shared fundational work can be added onto the first slice to keep in interfaces client driven
 - any shared infrastructure could be added as an extra step at the end
 
-e.g. for adding a new resource which requires CRUD operations the slices could be
+E.G. for adding a new resource which requires CRUD operations the slices could be
 
 1. Create new widget
 2. Get new widget
@@ -28,26 +28,34 @@ Each of these are external operations which can be tested, reviewed, and deploye
 
 # Testing
 
-Follow the guidance for building a test suite in https://github.com/Jmen/skills/blob/main/testing/SKILL.MD
+Follow the guidance for building a test suite in ./testing/SKILL.md
 
-##Test Driven Development**
+## Test Driven Development
 
 - Write a list of test cases
 - Pick one test to start with
 - Write a failing test
 - Write the functional code until the test passes
-- Refactor both new and old code to make it well structured
+- Refactor the implementation to be consistent with the target architecture
+- Refactor the tests towards a Given, When, Then structure when it would help readability
 - Pick the next test from the list
 
-- use emojis to make the current stage clear 
-- - Tests Failing 🟥
-- - Test Passing 🟩
-- - Refactoring 🟦
+# Status Updates
 
-- look for opportunities to add to existing tests rather than adding a new test everytime
-- we want to keep the tests consice, and minimise how long they take to run
+## Test Cases
 
-**Deployment Risk**
+- output the test cases at the begining of the slice in concise bullet points
 
-- evaluate the deployment risk of this change in term of backward compatibility
-- recommend if feature toggles might be useful, or a certain deployment order of updates
+E.G.
+
+- updates profile image
+- validates username
+- rejects unauthenticated user
+- database error
+
+## Cycle
+
+- use emojis to make the current stage clear
+  - Red 🟥
+  - Green 🟩
+  - Refactor 🟦
