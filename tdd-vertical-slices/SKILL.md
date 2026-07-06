@@ -5,7 +5,7 @@ description: Use when implementing a change — break the work into vertical sli
 
 # Preparation
 
-- before starting, check if there are any refactoring(s) that would make the change simpler to implement
+- Before starting, check if there are any refactoring(s) that would make the change simpler to implement
 - "make the change easy, then make the easy change"
 
 # Slicing
@@ -44,7 +44,7 @@ Follow the guidance for building a test suite in ./testing/SKILL.md
 
 ## Test Cases
 
-- output the test cases at the begining of the slice in concise bullet points
+- Output the test cases at the beginning of the slice in concise bullet points
 
 E.G.
 
@@ -55,7 +55,13 @@ E.G.
 
 ## Cycle
 
-- use emojis to make the current stage clear
+- Use emojis to make the current stage clear
   - Red 🟥
   - Green 🟩
   - Refactor 🟦
+
+# Precommit
+
+Think about how much testing can be performed locally to ensure every commit is a clean working change and gives as much confidence as possible, before requiring verification in a test environment
+- Check the README.MD for guidance
+- Check the package.json to existing tasks
