@@ -1,6 +1,6 @@
 ---
 name: pr-description
-description: Use when creating a Pull Request
+description: Use when creating, opening or updating a Pull Request (PR)
 ---
 
 # Steps
